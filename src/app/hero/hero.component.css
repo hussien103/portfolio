@@ -1,0 +1,39 @@
+.start-25{
+    left: 25%;
+}
+
+.top-25{
+    top:25%;
+}
+
+.top-35{
+    top:35%;
+}
+
+.font-size-hero{
+
+    font-size: 70px;
+}
+.font-size-hero-small{
+    font-size:60px;
+}
+
+.background-image {
+    background-image: url('/assets/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Takes full viewport height */
+    width: 100%; /* Takes the full width of its container */
+    position: relative; /* Changed to relative positioning */
+    z-index: -1; /* Ensures the background is behind other content */
+    box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.5); /* Increases the darkness of the shadow */
+}
+
+.background-image:nth-child(odd) {
+    filter: brightness(0.8);
+}
+
+.background-image:nth-child(even) {
+    filter: contrast(1.2);
+}
